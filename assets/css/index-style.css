@@ -1,0 +1,78 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000000;
+    --grey-color: #999;
+    --dark-grey-color: #414040;
+    --golden-color: #FFD700;
+    --mobile-homepage-font: larger;
+    --mobile-title-font: large;
+    --mobile-body-font: small;
+    --tablet-homepage-font: x-large;
+    --tablet-title-font: larger;
+    --tablet-body-font: medium;
+    --desktop-homepage-font: xx-large;
+    --desktop-title-font: x-large;
+    --desktop-body-font: large;
+    --big-desktop-homepage-font: xxx-large;
+    --big-desktop-title-font: xx-large;
+    --big-desktop-body-font: x-large;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+    width: .6em;
+    height: .6em;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--white-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-grey-color);
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    background-color: var(--black-color);
+    word-break: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 3vh auto 3vh auto;
+    height: 1000vh;
+    width: 80vw;
+    text-align: center;
+    justify-content: space-around;
+}
+
+h1,
+.subtitle {
+    color: var(--golden-color);
+}
