@@ -4,18 +4,12 @@
     --grey-color: #999;
     --dark-grey-color: #414040;
     --golden-color: #FFD700;
-    --mobile-homepage-font: larger;
-    --mobile-title-font: large;
+    --mobile-title-font: medium;
     --mobile-body-font: small;
-    --tablet-homepage-font: x-large;
-    --tablet-title-font: larger;
+    --tablet-title-font: large;
     --tablet-body-font: medium;
-    --desktop-homepage-font: xx-large;
     --desktop-title-font: x-large;
     --desktop-body-font: large;
-    --big-desktop-homepage-font: xxx-large;
-    --big-desktop-title-font: xx-large;
-    --big-desktop-body-font: x-large;
 }
 
 * {
@@ -61,12 +55,12 @@ ul>li {
 
 a {
     text-decoration: none;
+    font-size: var(--desktop-body-font);
 }
 
 main {
     display: flex;
     margin: 3vh auto 3vh auto;
-    height: 100vh;
     width: 80vw;
     text-align: center;
     flex-direction: column;
@@ -75,6 +69,7 @@ main {
 h1,
 .subtitle {
     color: var(--golden-color);
+    font-size: var(--desktop-title-font-font);
 }
 
 .logo {
@@ -97,18 +92,21 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 5px;
+    word-break: break-all;
 }
 
 .location {
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-size: var(--desktop-body-font);
 }
 
 .socials {
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-size: var(--desktop-body-font);
 }
 
 .social_logo {
@@ -120,6 +118,68 @@ footer {
 .socials > span {
     margin-top: 5px;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    main {
+        width: 90vw;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    a {
+        font-size: var(--mobile-body-font);
+    }
+
+    h1,
+    .subtitle {
+        font-size: var(--mobile-title-font-font);
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .location {
+        font-size: var(--mobile-body-font);
+    }
+
+    .socials {
+        font-size: var(--mobile-body-font);
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1300px) {
+    main {
+        width: 90vw;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    a {
+        font-size: var(--tablet-body-font);
+    }
+
+    h1,
+    .subtitle {
+        font-size: var(--tablet-title-font-font);
+    }
+
+    .location {
+        font-size: var(--tablet-body-font);
+    }
+
+    .socials {
+        font-size: var(--tablet-body-font);
+    }
+}
+
+
+
 
 
 
